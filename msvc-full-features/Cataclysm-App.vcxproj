@@ -22,13 +22,13 @@
     <ProjectGuid>{18A6550D-1A53-478B-B615-20A2AF25A2CB}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Cataclysm-App</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
@@ -49,7 +49,7 @@
   <PropertyGroup>
     <TargetName>$(ProjectName)-$(Configuration)-$(Platform)</TargetName>
     <TargetExt>.exe</TargetExt>
-    <OutDir>$(SolutionDir)..\</OutDir>
+    <OutDir>d:\GitHub\Cataclysm-DDA\msvc-full-features\distribution\</OutDir>
     <IntDir>$(SolutionDir)$(ProjectName)\$(Configuration)\$(Platform)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">
@@ -57,6 +57,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
     <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\lua-5.3.3\include\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\gettext\include\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2-2.0.9\include\SDL2\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_ttf-2.0.14\include\SDL2\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_mixer-2.0.4\include\SDL2\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_image-2.0.4\include\SDL2\;$(IncludePath)</IncludePath>
+    <LibraryPath>d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\gettext\lib\x64\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2-2.0.9\lib\x64\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\lua-5.3.3\lib\x64\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_ttf-2.0.14\lib\x64\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_mixer-2.0.4\lib\x64\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_image-2.0.4\lib\x64\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\lua-5.3.3\include\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\gettext\include\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2-2.0.9\include\SDL2\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_ttf-2.0.14\include\SDL2\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_mixer-2.0.4\include\SDL2\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_image-2.0.4\include\SDL2\;$(IncludePath)</IncludePath>
+    <LibraryPath>d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\gettext\lib\x64\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2-2.0.9\lib\x64\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\lua-5.3.3\lib\x64\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_ttf-2.0.14\lib\x64\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_mixer-2.0.4\lib\x64\;d:\GitHub\Cataclysm-DDA\msvc-full-features\WinDepend\SDL2_image-2.0.4\lib\x64\;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
